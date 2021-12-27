@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    font-family: 'VT323', monospace;
+    cursor:url(../assets/cursor.cur),auto;
+    display: flex;
+    padding: 0em;
+    margin: 0em;
+    width: 100%;
+    background-image: url(/assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px; 
+}
+
+.container {
+    padding: 0em;
+    margin: auto;
+    width: 33em;
+    height: 33em;
+    background-image:url(../assets/walltexture.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.4em dashed black;
+}
+
+#player {
+    background-image: url(../assets/dog.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 4px dashed black;
+    border-radius: 2em;
+    width: 3em;
+    height: 3em;
+    transition-duration: 0.2s;
+}
+
+.pointer {
+    text-align: center;
+    background-image: url(../assets/infobackground.jpg);
+    height: 4em;
+    margin-top: 1em;
+    padding-top: 0.2em;
+    border-bottom: 0em;
+    color: white;
+    font-size: 1.2em;  
+}
+
+#title {
+    text-align: center;
+    font-size: 2em;
+}
+
+.stats {
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
+#points {
+    font-size: 1em;
+    margin-left: 5em;
+    margin-right: 8em;
+}
+
+.buttons {
+    text-align: center;
+    width: 24em;
+}
+
+#start-btn {
+    font-weight:bold;
+    margin: 5%;
+    width: 50%;
+    height: 10%;
+    border-width: medium;
+    border-color: gray;
+    border-radius: 1rem;
+    background-image: url(../assets/start.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#restart-btn {
+    font-weight:bold;
+    margin: 5%;
+    width: 50%;
+    height: 10%;
+    border-width: medium;
+    border-color: gray;
+    border-radius: 1rem;
+    background-image: url(../assets/restart2.png);
+    background-size: 122%;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+
+label {
+    color: white;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 6px solid rgb(0, 102, 255);
+}
+
+legend {
+  color: white;
+  background-size: cover;
+  background-position: center;
+  padding: 1em;
+  border-radius: 0;
+  border: 0;
+  font-size: 2em;
+}
+
+fieldset {
+    margin-left: 1em;
+    width: 20em;
+}
+
+.sans {
+    margin-top: 1.5em;
+    width: 15em;
+    height: 15em;
+}
