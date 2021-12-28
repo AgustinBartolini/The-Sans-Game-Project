@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Pointer Game</title>
+    <title>Sans Game</title>
 </head>
 
 <body>
@@ -16,6 +16,7 @@
         <form>
             <fieldset>
               <legend>Select difficulty:</legend>
+                <input method="post">
                 <input type="radio" id="free" value="free" name="difficulty" checked>
                 <label for="choice3">Free Mode</label>
 
@@ -55,5 +56,3 @@
 
 <script src="./index.js"></script>
 </html>
-
-

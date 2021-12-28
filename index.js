@@ -26,11 +26,10 @@ function start() {
     points = 0;
     time = 80;
 
-    if(counter>-1){
-        startButton.disabled=true;
-    }
-    counter++;
-    
+    // if(counter>-1){
+    //     startButton.disabled=true;
+    // }
+    // counter++;
 };
 
 function restart() {
@@ -56,7 +55,7 @@ function plusPoints() {
 function timer() {
     timeContainer.innerHTML = `<p>Time: <b>${time}</b> </p>` 
     if(time==0 && points >= neededPoints){
-        alert("¡Congrats, you win!");
+        prompt("¡Congrats, you win!");
         time == 0
     }
     if(time==0 && points < neededPoints){
