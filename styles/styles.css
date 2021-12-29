@@ -145,3 +145,10 @@ fieldset {
     width: 15em;
     height: 15em;
 }
+
+#enviar {
+    background-color: transparent;
+    color: transparent;
+}
+
+

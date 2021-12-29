@@ -58,6 +58,14 @@
         <input type="submit" name="enviar" id="enviar">
     </form>
 
+    <section>
+        <div>
+        <fieldset>
+              <legend>Top Users:</legend>
+        </fieldset>
+        </div>
+    </section>
+
     <?php
     include("register.php");
     ?>

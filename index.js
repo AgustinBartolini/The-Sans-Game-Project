@@ -33,7 +33,6 @@ function restart() {
     play();
 };
 
-
 function plusPoints() {
     points++;
     document.getElementById("points").innerHTML = `<p>Points: <b>${points} / ${neededPoints} </b></p>`
