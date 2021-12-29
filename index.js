@@ -41,7 +41,7 @@ function plusPoints() {
     let randomNum2 = Math.round(Math.random()*480);
     player.style.marginTop = randomNum+"px";
     player.style.marginLeft = randomNum2+"px";
-    if (time == 0) {
+    if (time == -1) {
         points == 0;
     }
 };
@@ -50,30 +50,21 @@ function timer() {
     timeContainer.innerHTML = `<p>Time: <b>${time}</b> </p>` 
     if(time==0 && points >= neededPoints){
         let user = prompt("¡Congrats, you win! your score is "+points+". Write your user here.");
-        document.getElementById("user").value = user;
         time == 0
-        if(user !== null){
-            senData();
-        };
-    }
-    if(time==0 && points < neededPoints){
-        let user = prompt("You loose, better luck next time, your score is " +points+". Write your user here.");
         document.getElementById("user").value = user;
+        document.getElementById("points").value = points;
+        document.getElementById("enviar").click();
+    };
+    if(time==0 && points < neededPoints){
+        user = prompt("You loose, better luck next time, your score is " +points+". Write your user here.");
         time == 0;
-        if(user !== null){
-            senData();
-        };
-    }   
+        document.getElementById("user").value = user;
+        document.getElementById("points").value = points;
+        document.getElementById("enviar").click();
+    };
     if(time>=1){
         time-=1;
         setTimeout("timer()",1000);
-    };
-
-    function senData(){
-        console.log(user);
-        console.log(points);
-        document.getElementById("points").value = points;
-        //document.getElementById("userform").submit();
     };
 };
 

@@ -54,8 +54,8 @@
 
     <form method="post" name="userform" id="userform">
         <input type="hidden" name= "points" id="points">
-        <input type="text" name= "user" id="user">
-        <button type="submit" name="enviar" id="enviar">Enviar</button>
+        <input type="hidden" name="user" id="user">
+        <input type="submit" name="enviar" id="enviar">
     </form>
 
     <?php
