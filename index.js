@@ -23,7 +23,7 @@ function start() {
     timer();
     play();
     points = 0;
-    time = 1;
+    time = 3;
 };
 
 function restart() {
@@ -32,7 +32,6 @@ function restart() {
     pause();
     play();
 };
-
 
 function plusPoints() {
     points++;
