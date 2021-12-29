@@ -23,7 +23,7 @@ function start() {
     timer();
     play();
     points = 0;
-    time = 2;
+    time = 80;
 };
 
 function restart() {
@@ -41,33 +41,29 @@ function plusPoints() {
     let randomNum2 = Math.round(Math.random()*480);
     player.style.marginTop = randomNum+"px";
     player.style.marginLeft = randomNum2+"px";
-    if (time == -1) {
-        points == 0;
-    }
 };
 
 function timer() {
     timeContainer.innerHTML = `<p>Time: <b>${time}</b> </p>` 
     if(time==0 && points >= neededPoints){
         let user = prompt("¡Congrats, you win! your score is "+points+". Write your user here.");
-        time == 0
         document.getElementById("user").value = user;
         document.getElementById("points").value = points;
         document.getElementById("enviar").click();
+        time == 0
     };
     if(time==0 && points < neededPoints){
         user = prompt("You loose, better luck next time, your score is " +points+". Write your user here.");
-        time == 0;
         document.getElementById("user").value = user;
         document.getElementById("points").value = points;
         document.getElementById("enviar").click();
+        time == 0
     };
     if(time>=1){
         time-=1;
         setTimeout("timer()",1000);
     };
 };
-
 
 function play() {
     var audio = new Audio('./assets/audio.mp3');
@@ -96,8 +92,4 @@ function difficulty() {
         player.style.transitionDuration = "";
         neededPoints = 170;
     };
-};
-
-function openForm() {
-    window.open('./formscore.php','ventana','width=640,height=480,scrollbars=NO,menubar=NO,resizable=NO,titlebar=NO,status=NO');
 };
