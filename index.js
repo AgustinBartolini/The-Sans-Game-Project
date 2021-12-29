@@ -15,7 +15,6 @@
 
 let points = 0;
 let time = 80;
-let counter= 0;
 
 difficulty();
 
@@ -24,12 +23,7 @@ function start() {
     timer();
     play();
     points = 0;
-    time = 80;
-
-    // if(counter>-1){
-    //     startButton.disabled=true;
-    // }
-    // counter++;
+    time = 2;
 };
 
 function restart() {
@@ -55,28 +49,39 @@ function plusPoints() {
 function timer() {
     timeContainer.innerHTML = `<p>Time: <b>${time}</b> </p>` 
     if(time==0 && points >= neededPoints){
-        prompt("¡Congrats, you win!");
+        let user = prompt("¡Congrats, you win! your score is "+points+". Write your user here.");
+        document.getElementById("user").value = user;
         time == 0
+        if(user !== null){
+            senData();
+        };
     }
     if(time==0 && points < neededPoints){
-        alert("You loose, better luck next time.");
+        let user = prompt("You loose, better luck next time, your score is " +points+". Write your user here.");
+        document.getElementById("user").value = user;
         time == 0;
+        if(user !== null){
+            senData();
+        };
     }   
     if(time>=1){
         time-=1;
         setTimeout("timer()",1000);
     };
+
+    function senData(){
+        console.log(user);
+        console.log(points);
+        document.getElementById("points").value = points;
+        //document.getElementById("userform").submit();
+    };
 };
+
 
 function play() {
-    var audio = new Audio('../assets/audio.mp3');
+    var audio = new Audio('./assets/audio.mp3');
     audio.volume = 0.1;
     audio.play();
-};
-
-function pause() {
-    var audio = Audio('../assets/audio.mp3');
-    audio.stop();
 };
 
 function difficulty() {
@@ -98,6 +103,10 @@ function difficulty() {
     };
     if(sans.checked) {
         player.style.transitionDuration = "";
-        neededPoints = 180;
+        neededPoints = 170;
     };
+};
+
+function openForm() {
+    window.open('./formscore.php','ventana','width=640,height=480,scrollbars=NO,menubar=NO,resizable=NO,titlebar=NO,status=NO');
 };

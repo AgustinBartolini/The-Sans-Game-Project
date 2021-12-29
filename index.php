@@ -16,7 +16,6 @@
         <form>
             <fieldset>
               <legend>Select difficulty:</legend>
-                <input method="post">
                 <input type="radio" id="free" value="free" name="difficulty" checked>
                 <label for="choice3">Free Mode</label>
 
@@ -52,6 +51,16 @@
             <div id="player"></div>
         </div>
     </div>
+
+    <form method="post" name="userform" id="userform">
+        <input type="hidden" name= "points" id="points">
+        <input type="text" name= "user" id="user">
+        <button type="submit" name="enviar" id="enviar">Enviar</button>
+    </form>
+
+    <?php
+    include("register.php");
+    ?>
 </body>
 
 <script src="./index.js"></script>
