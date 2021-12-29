@@ -1,4 +1,5 @@
 <?php
+
 include("con_db.php");
 
 if(isset($_POST['enviar'])) {
@@ -8,5 +9,6 @@ if(isset($_POST['enviar'])) {
         $request = "INSERT INTO `requests`(`user`, `score`) VALUES ('$user','$score')";
         $result = mysqli_query($conection, $request);
     }
-}
+};
+
 ?>
