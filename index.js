@@ -44,18 +44,18 @@ function plusPoints() {
 };
 
 function timer() {
-    timeContainer.innerHTML = `<p>Time: <b>${time}</b> </p>` 
+    timeContainer.innerHTML = `<p>Time: <b>${time}</b> </p>`
     if(time==0 && points >= neededPoints){
+        document.userform.points.value = points;
         let user = prompt("¡Congrats, you win! your score is "+points+". Write your user here.");
         document.getElementById("user").value = user;
-        document.getElementById("points").value = points;
         document.getElementById("enviar").click();
         time == 0
     };
     if(time==0 && points < neededPoints){
+        document.userform.points.value = points;
         user = prompt("You loose, better luck next time, your score is " +points+". Write your user here.");
         document.getElementById("user").value = user;
-        document.getElementById("points").value = points;
         document.getElementById("enviar").click();
         time == 0
     };
