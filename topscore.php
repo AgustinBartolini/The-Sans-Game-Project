@@ -8,7 +8,7 @@ $fila= mysqli_fetch_array ($data);
 
 while ($fila = mysqli_fetch_array($data)){
     echo '<p style="color: white">';
-    echo $fila ["user"];
+    echo $fila ["score"];
     echo '</p>';
 };
 

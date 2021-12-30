@@ -58,13 +58,13 @@
         <input type="submit" name="enviar" id="enviar">
     </form>
 
-    <section>
-        <div>
-        <fieldset>
-              <legend>Top Users:</legend>
-        </fieldset>
+    <fieldset>
+        <legend>Top Users:</legend>
+        <div class="topContainer">
+            <div class="topusers"> <?php include './topusers.php';?> </div>
+            <div class="topscore"> <?php include './topscore.php';?> </div>
         </div>
-    </section>
+    </fieldset>
 
     <?php
     include("register.php");

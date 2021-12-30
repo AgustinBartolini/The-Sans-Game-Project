@@ -94,11 +94,10 @@ body {
     border-color: gray;
     border-radius: 1rem;
     background-image: url(../assets/restart2.png);
-    background-size: 122%;
+    background-size: 123%;
     background-position:center;
     background-repeat: no-repeat;
 }
-
 
 label {
     color: white;
@@ -108,15 +107,12 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
   border-radius: 50%;
   width: 16px;
   height: 16px;
-
   border: 2px solid #999;
   transition: 0.2s all linear;
   margin-right: 5px;
-
   position: relative;
   top: 4px;
 }
@@ -149,6 +145,20 @@ fieldset {
 #enviar {
     background-color: transparent;
     color: transparent;
+    border-color: transparent;
 }
 
+.topContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
 
+.topusers {
+    width: 70%;
+}
+
+.topscore {
+    width: 10%;
+}
