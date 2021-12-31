@@ -61,14 +61,12 @@
     <fieldset>
         <legend>Top Users:</legend>
         <div class="topContainer">
-            <div class="topusers"> <?php include './topusers.php';?> </div>
-            <div class="topscore"> <?php include './topscore.php';?> </div>
+            <div class="topusers"> <?php include './topusers.php'; ?> </div>
+            <div class="topscore"> <?php include './topscore.php'; ?> </div>
         </div>
     </fieldset>
 
-    <?php
-    include("register.php");
-    ?>
+    <?php include("register.php"); ?>
 </body>
 
 <script src="./index.js"></script>

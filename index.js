@@ -23,7 +23,7 @@ function start() {
     timer();
     play();
     points = 0;
-    time = 3;
+    time = 80;
 };
 
 function restart() {
