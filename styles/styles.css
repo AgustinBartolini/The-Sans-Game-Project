@@ -156,13 +156,13 @@ fieldset {
 }
 
 .topusers {
-    font-size: 1.3em;
+    font-size: 1em;
     color: white;
     width: 90%;
 }
 
 .topscore {
-    font-size: 1.3em;
+    font-size: 1em;
     color: white;
     width: 10%;
 }
