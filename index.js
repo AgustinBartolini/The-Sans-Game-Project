@@ -7,6 +7,7 @@
  const medium = document.getElementById('medium');
  const hard = document.getElementById('hard');
  const free = document.getElementById('free');
+ const sansmode = document.getElementById('sansmode');
 
  startButton.addEventListener("click",start);
  restartButton.addEventListener("click",restart);
@@ -86,7 +87,7 @@ function difficulty() {
         player.style.transitionDuration = "0.3s";
         neededPoints = 160;
     };
-    if(sans.checked) {
+    if(sansmode.checked) {
         player.style.transitionDuration = "";
         neededPoints = 170;
     };
