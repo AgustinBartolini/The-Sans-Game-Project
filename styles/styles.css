@@ -137,8 +137,8 @@ fieldset {
     width: 20em;
 }
 
-.sans {
-    margin-top: 1.5em;
+#sans {
+    margin-top: 4em;
     width: 15em;
     height: 15em;
 }
@@ -156,13 +156,13 @@ fieldset {
 }
 
 .topusers {
-    font-size: 1.3em;
+    font-size: 1em;
     color: white;
     width: 90%;
 }
 
 .topscore {
-    font-size: 1.3em;
+    font-size: 1em;
     color: white;
     width: 10%;
 }

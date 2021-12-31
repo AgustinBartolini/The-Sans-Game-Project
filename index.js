@@ -7,7 +7,6 @@
  const medium = document.getElementById('medium');
  const hard = document.getElementById('hard');
  const free = document.getElementById('free');
- const sansContainer = document.getElementById('sansContainer');
 
  startButton.addEventListener("click",start);
  restartButton.addEventListener("click",restart);
